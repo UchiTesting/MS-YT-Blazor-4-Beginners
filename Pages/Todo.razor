@@ -15,7 +15,7 @@
 </ul>
 
 <input placeholder="Something todo" @bind="newTodo" @bind:event="oninput"/>
-<input placeholder="Due Date" @bind="DueDate" />
+<input placeholder="Due Date" @bind="DueDate" @bind:format="yyyy-MM-dd"/>
 <button @onclick="AddTodo">Add todo</button>
 
 @if (!string.IsNullOrEmpty(newTodo)){

@@ -14,7 +14,7 @@
     }
 </ul>
 
-<input placeholder="Something todo" @bind="newTodo" />
+<input placeholder="Something todo" @bind="newTodo" @bind:event="oninput"/>
 <input placeholder="Due Date" @bind="DueDate" />
 <button @onclick="AddTodo">Add todo</button>
 
